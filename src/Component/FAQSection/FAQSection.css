@@ -1,0 +1,134 @@
+:root {
+    --black: 0, 0, 0;
+    --white: 255, 255, 255;
+    --title-color: 245, 245, 245;
+    --content-color: 192, 180, 200;
+    --theme-color: 191, 140, 233;
+    --dark-title: 13, 18, 31;
+    --Iconsax-Color: #6e7179;
+    --secondary-color: 244, 137, 65;
+    --warning-color: 255, 189, 48;
+    --info-color: 220, 154, 254;
+    --danger-color: 157, 145, 255;
+}
+
+
+
+.Faq-section {
+    background: white;
+    padding-top: 100px;
+    margin-bottom: 50px;
+
+    @media (max-width: 750px) {
+        padding-top: 48px;
+    }
+}
+
+
+.Faq-wrapper {
+    padding-bottom: 50px;
+}
+
+.Faq-heading {
+    font-family: 'Outfit';
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+
+    max-width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+
+    @media (max-width: 780px) {
+        font-size: 30px;
+    }
+}
+
+.Faq-main {}
+
+.Faq-main .accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 24px 0px;
+    
+}
+
+.Faq-main .accordion .accordion-item {
+    border: 1px solid #eef4ed;
+    color: #0c0f0bb3;
+    border-radius: 2px;
+ 
+}
+
+.Faq-main .accordion .accordion-item .accordion-header {}
+
+.Faq-main .accordion .accordion-item .accordion-header .accordion-button {
+    background: #ffff;
+    color: #0A5D00;
+    font-family: 'Outfit';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 31px;
+    padding: 19.5px;
+    border-bottom: 2px solid #eef4ed;
+
+}
+
+.Faq-main .accordion .accordion-item .accordion-header .accordion-button::after {
+
+    background-image: url("../../Images/subtract-line\ \(1\).svg");
+    transition: .3s;
+}
+.faq-main .accordion .accordion-item .accordion-button {
+    background-color: #eef4ed;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    color: rgba(var(--theme-color), 1);
+    font-size: calc(16px + 6 * (100vw - 320px) / 1600);
+    padding: calc(15px + 5 * (100vw - 320px) / 1600) calc(15px + 10 * (100vw - 320px) / 1600);
+    line-height: 1.4;
+  }
+.Faq-main .accordion .accordion-item .accordion-header .accordion-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.Faq-main .accordion .accordion-item .accordion-header .collapsed {
+    color: #0c0f0bb3;
+    font-weight: 500;
+    
+}
+
+.Faq-main .accordion .accordion-item .accordion-header .collapsed::after {
+    background-image: url("../../Images//add-line\ \(2\).svg");
+    transition: .3s;
+}
+
+.Faq-main .accordion .accordion-item .accordion-collapse {}
+
+.Faq-main .accordion .accordion-item .collapse {}
+
+.Faq-main .accordion .accordion-item .show {}
+
+.Faq-main .accordion .accordion-item .accordion-collapse {
+    /* padding: 24px; */
+    background: rgb(25, 13, 56);
+}
+
+.Faq-main .accordion .accordion-item .accordion-collapse .accordion-body {
+    padding: calc(15px + 5*(100vw - 320px) / 1600) calc(15px + 10*(100vw - 320px) / 1600);
+    font-family: 'Outfit';
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 29px;
+    background-color: white;
+    color: #656565;
+}
+
+.Faq-main .accordion .accordion-item .accordion-header .accordion-button{
+    background-color: #EEF4ED;
+}
+
+.Faq-main .accordion .accordion-item .accordion-header .collapsed{
+background-color: transparent;
+}

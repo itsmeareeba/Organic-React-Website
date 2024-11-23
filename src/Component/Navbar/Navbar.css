@@ -1,0 +1,312 @@
+/* Removed @media and added responsive Tailwind classes in HTML */
+
+:root {
+    --black: 0, 0, 0;
+    --white: 12, 15, 11;
+    --title-color: 12, 15, 11;
+    --content-color: 101, 101, 101;
+    --theme-color: 10, 93, 0;
+    --dark-title: 255, 255, 255;
+    --Iconsax-Color: 10, 93, 0;
+    --secondary-color: 250, 146, 88;
+    --warning-color: 255, 189, 48;
+    --info-color: 220, 154, 254;
+    --danger-color: 157, 145, 255;
+}
+
+.header-container {
+    padding: 0px 100px;
+    @media (max-width: 1350px) {
+        padding: 0px 50px;
+    }
+    @media (max-width: 600px) {
+        padding: 0px 16px;
+    }
+}
+
+
+.header-otr {
+    position: absolute;
+    top: 7px;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out;
+    background-color: transparent;
+    @media (max-width: 750px) {
+        padding: 0px 16px;
+        top: 0;
+        background-color: transparent;
+    }
+}
+
+.scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #eef4ed;
+    z-index: 10;
+}
+.btn-ofc {
+    flex: 1;
+    display: none;
+}
+.forOffcanvas{
+    margin-top: 15px  !important;
+}
+@media (max-width: 750px) {
+    .btn-ofc {
+        display: inline;
+    }
+}
+.header-inr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+}
+
+.menu-logo {
+    display: flex;
+    align-items: center;
+    gap: 0px 16px;
+    @media (max-width: 750px) {
+        justify-content: space-between;
+        width: 100%;
+        flex-direction: row-reverse;
+    }
+}
+
+.again-nav-logo {
+    width: 80px;
+    height: 70px;
+}
+
+.header-logo {}
+
+.header-ul {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    @media (max-width: 1200px) {
+        display: none;
+    }
+}
+
+.header-li {
+    position: relative;
+}
+
+.header-li::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: transparent;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -15px;
+    transition: 0.3s;
+}
+
+.header-li:hover::after {
+    background-color: #0a5d00 !important;
+}
+
+.header-li:hover .header-a {
+    color: #0a5d00 !important;
+}
+
+.header-li .active {
+    color: #0a5d00 !important;
+}
+
+.header-a {
+    font-family: 'Outfit';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgba(12, 15, 11, 1) !important;
+    text-transform: capitalize;
+    transition: 0.3s;
+    cursor: pointer;
+    @media (max-width: 1200px) {
+        color: #656565 !important;
+    }
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border: 1px solid #dae7d9;
+    @media (max-width: 750px) {
+        display: none;
+    }
+}
+
+.offcanvas-body-main {
+    background-color: #eef4ed !important;
+}
+
+.offcanvas-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.offcanvas-heading {
+    color: white !important;
+    font-family: 'Outfit';
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 0;
+}
+
+.closeIcon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.offcanvas-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 40px 0px;
+}
+
+.offcanvas-ul .header-a {
+    color: #0a5d00;
+}
+
+.menu-header {
+    width: 40px;
+    height: 40px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #0a5d00;
+    border-radius: 8px;
+    cursor: pointer;
+    @media (max-width: 1200px) {
+        display: flex;
+    }
+}
+
+
+
+.menuIcon {
+    width: 24px;
+    height: 24px;
+}
+.offcanvas-main {
+    @media (max-width: 750px) {
+        width: 300px !important;
+    }
+}
+.offcanvas-actions {
+    margin-top: 16px;
+    margin-left: 15px;
+    display: flex;
+    gap: 0px 24px;
+
+    @media (max-width: 750px) {
+        flex-direction: column;
+        gap: 24px 0px;
+    }
+}
+
+
+.header-actions1-otr {
+}
+
+.header-actions1-inrr {
+    position: relative;
+    display: flex;
+    text-align: center;
+    font-size: calc(14px + 6 * (100vw - 320px) / 1600);
+    backdrop-filter: blur(6px);
+    border-radius: 5px;
+    padding: calc(10px + 2 * (100vw - 320px) / 1600) calc(20px + 20 * (100vw - 320px) / 1600);
+    transition: 0.4s;
+    border: 1px solid #5df043;
+}
+.header-actions1-inr {
+    position: relative;
+    display: flex;
+    text-align: center;
+    font-size: calc(14px + 6 * (100vw - 320px) / 1600);
+    backdrop-filter: blur(6px);
+    border-radius: 5px;
+    padding: calc(10px + 2 * (100vw - 320px) / 1600) calc(20px + 20 * (100vw - 320px) / 1600);
+    transition: 0.4s;
+    border: 1px solid #5df043;
+}
+.header-actions1-inr span {
+    margin: auto;
+    color: #0a5d00 !important;
+    font-weight: 500;
+    font-family: 'Outfit';
+}
+.extra {
+    background-color: white;
+}
+
+.header-actions1-inrr span {
+    margin: auto;
+    color: #0a5d00 !important;
+    font-weight: 500;
+    font-family: 'Outfit';
+}
+.header-actions1-inr:hover {
+    background-color: #0a5d00;
+}
+
+.header-actions1-inr:hover span {
+    margin: auto;
+    color: white !important;
+    font-family: 'Outfit';
+}
+.header-actions1-inrr:hover {
+    background-color: #0a5d00;
+}
+
+.header-actions1-inrr:hover span {
+    margin: auto;
+    color: white !important;
+    font-family: 'Outfit';
+}
+
+.offcanvas-actions-otr {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    @media (max-width: 750px) {
+        flex-direction: column;
+     }
+}
+
+.offcanvas-action1-otr {
+    flex: 1;
+    position: relative;
+    display: flex;
+    text-align: center;
+    font-size: calc(14px + 6 * (100vw - 320px) / 1600);
+    backdrop-filter: blur(6px);
+    border-radius: 5px;
+    padding: calc(10px + 2 * (100vw - 320px) / 1600) calc(20px + 20 * (100vw - 320px) / 1600);
+    transition: 0.4s;
+    border: 1px solid #eef4ed;
+    margin: auto;
+    color: #0a5d00 !important;
+    font-weight: 500;
+    font-family: 'Outfit';
+    background: white;
+    display: flex;
+    justify-content: center;
+    @media (max-width: 750px) {
+        width: 100%;
+     }
+}

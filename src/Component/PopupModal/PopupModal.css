@@ -1,0 +1,18 @@
+.modal-body{
+    padding: 26px;
+    width: 500px !important;
+    /* height: 430px !important; */
+    @media (max-width: 550px) {
+        width: 350px !important;
+     }
+   
+}
+.modal-icon{
+    margin: 0 auto 24px auto;
+    width: 40px;
+    height: 40px;
+
+}
+.modal-text{
+    padding-bottom: 12px !important;
+}

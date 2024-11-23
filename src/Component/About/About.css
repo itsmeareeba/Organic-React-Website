@@ -1,0 +1,139 @@
+.About-details {
+    margin: 112px 0 128px 0;
+}
+
+.About-details .container-fluid .row-custom {
+    justify-content: center;
+
+}
+.main-about{
+    text-align: center;
+}
+.bg-effect .feature-bg1 {
+    position: absolute;
+    bottom: 0;
+    opacity: 0.15;
+    width: 100%;
+    left: 0;
+  }
+.head{
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 700;
+    padding-bottom: 20px !important;
+    font-family: 'Poppins-Regular';
+}
+.About-detail{
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    font-family: 'Poppins-Regular';
+    padding-bottom: 80px !important;
+}
+.heading3-ul-about{
+    display: flex !important;
+    gap: 40px;
+    padding-bottom: 20px !important;
+    @media (max-width: 992px) {
+        flex-direction: column;
+    }
+
+
+}
+.heading3-li-about:nth-child(1){
+    flex: 1;
+    background-color: rgb(255 249 236);
+    padding: 48px !important;
+    border-radius: 8px;
+}
+.heading3-li-about:nth-child(2){
+    flex: 1;
+    background-color: rgb(188 231 196 );
+    padding: 48px !important;
+    border-radius: 8px;
+}
+.heading3-li-about:nth-child(3){
+    flex: 1;
+    padding: 48px !important;
+    border-radius: 8px;
+    background-color: rgb(255 225 232);
+}
+
+  
+.heading3-head{
+    font-size: 50px;
+    line-height: 60px;
+    font-family: 'Poppins-Regular';
+    font-weight: 700;
+    padding-bottom: 20px !important;
+}
+.heading3-head1{
+    font-size: 50px;
+    line-height: 60px;
+    font-family: 'Poppins-Regular';
+    font-weight: 700;
+    padding: 20px 0px !important;
+}
+.heading3-p{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: 'Poppins-Regular';
+     padding-top: 16px !important;
+}
+.heading3-p-span{
+    padding-right: 20px;
+    font-weight: 600 !important;
+    font-size: 30px;
+    line-height: 40px;
+   
+}
+.heading3-li{
+    /* list-style: disc !important; */
+    
+}
+.lower-about{
+    text-align: center;
+}
+@media only screen and (max-width: 992px) {
+    /* .head {
+        font-size: 50px;
+        line-height: 60px;
+        font-weight: 700;
+    }
+    .About-detail {
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 500;
+    }
+    .heading3-head {
+        font-size: 40px;
+        line-height: 50px;
+
+    }
+    .heading3-p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .heading3-p-span {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .heading3-head1 {
+        font-size: 30px;
+        line-height: 40px;
+      
+    } */
+}
+@media only screen and (max-width: 767px) {
+    /* .head {
+        font-size: 29px;
+        line-height: 29px;
+        font-weight: 700;
+    }
+    .About-detail {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+    } */
+}

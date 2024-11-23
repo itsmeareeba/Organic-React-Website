@@ -1,0 +1,43 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    padding: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box;
+  }
+  
+  ul,
+  li {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  a {
+    display: block;
+    text-decoration: none !important;
+    &:hover {
+      text-decoration: none !important;
+    }
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+.a1{
+    font-family: 'Poppins-Regular';
+}

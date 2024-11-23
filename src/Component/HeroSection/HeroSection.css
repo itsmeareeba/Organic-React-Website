@@ -1,0 +1,106 @@
+/* .hero-section {
+    background-image: url("../../Images/image-back2.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    fill-opacity: 1;
+   height: 100vh;
+   background-attachment: fixed;
+   background-position: center;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  .hero-section {
+    background-size: cover;
+    background-repeat: no-repeat;
+    fill-opacity: 1;
+   height: 100vh;
+   background-attachment: fixed;
+   background-position: center;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: backgroundRotate 20s infinite;
+  }
+  
+
+  @keyframes backgroundRotate {
+    0% {
+      /* background-image: url("../../Images/hero-section-bg-4.jpg"); */
+      background-image: url("../../Images/hero-section-bg-4.jpg");
+    }
+    25% {
+      /* background-image: url("../../Images/image-back2.svg"); */
+      background-image: url("../../Images/hero-sectio-bg-3-1.jpg");
+    }
+    50% {
+      /* background-image: url("../../Images/hero-section-bg-2.jpg"); */
+      background-image: url("../../Images/hero-section-bg-4.jpg");
+    }
+    75% {
+      background-image: url("../../Images/hero-sectio-bg-3-1.jpg");
+    }
+    100% {
+      background-image: url("../../Images/hero-section-bg-4.jpg");
+    }
+  }
+  .container .wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+}
+  .heading {
+    color: #ffffff; 
+    font-family: 'Poppins-Regular';
+    font-size: 56px;
+    line-height: 70px;
+    font-weight: 700;
+    width: 80%;
+  }
+  
+  .detail {
+    font-family: 'Poppins-Regular';
+    color: #ffffff; 
+    font-size: 20px;
+    line-height: 36px;
+    width: 50%;
+  }
+  @media only screen and (max-width: 1400px) {
+    .heading {
+      font-size: 40px;
+      line-height: 50px;
+      font-weight: 700;
+      width: 90%;
+    }
+    
+    .detail {
+     
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 25px;
+      width: 90%;
+    }
+}
+@media only screen and (max-width: 767px) {
+  .heading {
+    font-size: 25px;
+    line-height: 32px;
+    font-weight: 700;
+    width: 90%;
+  }
+  
+  .detail {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    width: 90%;
+  }
+  .hero-section {
+   height: 60vh;
+  }
+}
+
+
+

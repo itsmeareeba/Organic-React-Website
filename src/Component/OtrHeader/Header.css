@@ -1,0 +1,84 @@
+.otr-header {
+    margin: 150px 0px 20px 0px;
+}
+
+.otr-header  .inner-header {
+    padding: 80px 0px;
+    text-align: center;
+    background-color: white;
+    margin-top: 29px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 20px 7px 22px rgba(0, 0, 0, 0.1);
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: backgroundRotate 20s infinite;
+    /* @media only screen and (max-width: 420px) {
+        padding: 40px 0px;
+    } */
+    
+}
+@keyframes backgroundRotate {
+    0% {
+      /* background-image: url("../../Images/hero-section-bg-4.jpg"); */
+      background-image: url("../../Images/hero-sectio-bg-3-1.jpg");
+    }
+    25% {
+      /* background-image: url("../../Images/image-back2.svg"); */
+ 
+      background-image: url("../../Images/hero-section-bg-4.jpg");
+    }
+    50% {
+      /* background-image: url("../../Images/hero-section-bg-2.jpg"); */
+      background-image: url("../../Images/hero-sectio-bg-3-1.jpg");
+    }
+    /* 75% {
+     
+      background-image: url("../../Images/hero-section-bg-4.jpg");
+    } */
+    100% {
+      
+      background-image: url("../../Images/hero-section-bg-4.jpg");
+    }
+  }
+.otr-header .container .inner-header::before {
+    content: "";
+    width: 577px;
+    position: absolute;
+    z-index: 1;
+    height: 577px;
+    background: #2eff00;
+    top: 0;
+    left: -51px;
+    border-radius: 100%;
+    filter: blur(150px);
+    opacity: 0.5;
+}
+.heading-H21{
+    font-family: 'Poppins-Regular';
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 40px;
+    @media only screen and (max-width: 420px) {
+        font-family: 'Poppins-Regular';
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 40px;
+    }
+
+   
+}
+@media only screen and (max-width: 992px) {
+    /* .heading-H21 {
+        font-size: 50px;
+        line-height: 50px;
+    } */
+}
+@media only screen and (max-width: 575px) {
+    /* .heading-H21 {
+        font-size: 36px;
+        line-height: 21px;
+    } */
+}
